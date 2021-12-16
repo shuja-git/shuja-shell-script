@@ -9,3 +9,6 @@ DATE=15/12/2021
 echo Good Morning, Todays date is ${DATE}
 dat=$(date +%F)
 echo Good Morning, Todays date is ${dat}
+
+echo user=${USER}
+echo A=${A}
