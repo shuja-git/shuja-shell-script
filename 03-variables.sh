@@ -12,3 +12,5 @@ echo Good Morning, Todays date is ${dat}
 
 echo user=${USER}
 echo A=${A}
+
+
