@@ -11,4 +11,5 @@ echo -e "\e[33mHello in Yello color\e[0m"
 echo -e "\e[34mHello in Blue color\e[0m"
 echo -e "\e[35mHello in Magenta Color \e[0m"
 echo -e "\e[36mHello in Cyan color\e[0m"
+echo -e "\e[5mShuja DevOps Engineer\e[0m"
 
