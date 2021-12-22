@@ -8,5 +8,5 @@ echo  date is - ${DATE}
 DATE=$(date +%F)
 echo todays date is - ${DATE}
 
-echo user = ${user}
-echo a = ${a}
+echo user = ${USER}
+echo A = ${A}
