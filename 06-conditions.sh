@@ -37,7 +37,7 @@
 #     (so many are there refer documentation)
 #--------------------------------------------------------------------------
 
-read -p "Enter ur Age- age"
+read -p "Enter ur Age- " age
 if [ "${age}" -lt 18 ]; then
   echo "You are Minor"
 else
