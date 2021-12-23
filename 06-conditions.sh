@@ -48,11 +48,11 @@
 #---------------------------------------------
 # to check if user is providing input or not use -z in string expression
 #example:
-read -p "enter ur age-" age
-if [ -z "${age}" ]; then
-  echo "Input missing"
-  exit
-fi
+#read -p "enter ur age-" age
+#if [ -z "${age}" ]; then
+#  echo "Input missing"
+#  exit
+#fi
 # that means if user has not giving any input then it should come out of script so use exit command
 
 # expressions can be combined
