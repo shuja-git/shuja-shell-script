@@ -18,13 +18,10 @@
 #Finally restart the service once to effect the changes.
 ### systemctl restart nginx
 #------------------------------------------------------------
+echo  frontend setup--
 #To Install Nginx.
-#check user is root user or not
-USER_ID=$(id -u)
-if [ "${USER_ID}" -ne 0  ]; then
-  echo -e "\e[1;31mU should be root user to perform this script\e[0m"
-  exit
-else
+
+
   yum install nginx -y
-fi
+
 
