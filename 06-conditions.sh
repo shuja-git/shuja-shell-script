@@ -42,7 +42,7 @@ if [ "${age}" -lt 18 ]; then
   echo "You are Minor"
 else
   echo "You are major"
-
+fi
 
 
 
