@@ -55,3 +55,27 @@ if [ -z "${age}" ]; then
 fi
 # that means if user has not giving any input then it should come out of script so use exit command
 
+# expressions can be combined
+#  [ expression-1 expression-2 ]
+# logical AND -a
+# logical OR  -o
+#  -a   [ expression-1 -a expression-2 ] here if both the expressions are true then logical and is true
+# -o   [ expression-1 -a expression-2 ] here if expression is true then logical or is true
+# before any expression when u give ! then it will inverse the logic, for example -z checks for empty and
+# ! -z checks for not empty
+
+read -p "enter ur age-" age
+#if [ -z "${age}" ]; then
+# echo "Input Missing.."
+# exit
+#fi
+if [  ! -z "${age}" -a "${age}" -gt 18 ]; then
+  echo  "u r major"
+elif [ -z "${age}" ]; then
+    echo "input missing"
+    exit
+elif [ "${age}" -gt 18 -o "${age}" -le 60 ]; then
+     echo "u r citizen"
+else
+      echo "u r senior citizen"
+fi
