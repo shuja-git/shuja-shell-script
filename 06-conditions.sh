@@ -74,8 +74,8 @@ if [  ! -z "${age}" -a "${age}" -lt 18 ]; then
 elif [ -z "${age}" ]; then
     echo "input missing"
     exit
-elif [ "${age}" -gt 18 -o "${age}" -gt 60 ]; then
-     echo "u r citizen"
+elif [ "${age}" -gt 18 -a "${age}" -gt 60 ]; then
+     echo "u r senior citizen"
 else
-      echo "u r senior citizen"
+      echo "u r citizen"
 fi
