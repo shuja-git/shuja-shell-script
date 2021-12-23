@@ -18,7 +18,7 @@
 #synatax:
 # if [ expression-1 ]; then
 #     command-1
-#  elseif [ expression-2 ]; then
+#  elif [ expression-2 ]; then
 #     command-2
 #  else
 #     command-else
@@ -40,6 +40,8 @@
 read -p "Enter ur Age- " age
 if [ "${age}" -lt 18 ]; then
   echo "You are Minor"
+elif [ "${age}" -gt 60 ]; then
+  echo "you are senior citizen"
 else
   echo "You are major"
 fi
