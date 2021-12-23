@@ -69,8 +69,8 @@ read -p "enter ur age-" age
 # echo "Input Missing.."
 # exit
 #fi
-if [  ! -z "${age}" -a "${age}" -gt 18 ]; then
-  echo  "u r major"
+if [  ! -z "${age}" -a "${age}" -lt 18 ]; then
+  echo  "u r minor"
 elif [ -z "${age}" ]; then
     echo "input missing"
     exit
