@@ -64,18 +64,22 @@
 # before any expression when u give ! then it will inverse the logic, for example -z checks for empty and
 # ! -z checks for not empty
 
-read -p "enter ur age-" age
-#if [ -z "${age}" ]; then
-# echo "Input Missing.."
-# exit
+#read -p "enter ur age-" age
+##if [ -z "${age}" ]; then
+## echo "Input Missing.."
+## exit
+##fi
+#if [  ! -z "${age}" -a "${age}" -lt 18 ]; then
+#  echo  "u r minor"
+#elif [ -z "${age}" ]; then
+#    echo "input missing"
+#    exit
+#elif [ "${age}" -gt 18 -a "${age}" -gt 60 ]; then
+#     echo "u r senior citizen"
+#else
+#      echo "u r citizen"
 #fi
-if [  ! -z "${age}" -a "${age}" -lt 18 ]; then
-  echo  "u r minor"
-elif [ -z "${age}" ]; then
-    echo "input missing"
-    exit
-elif [ "${age}" -gt 18 -a "${age}" -gt 60 ]; then
-     echo "u r senior citizen"
-else
-      echo "u r citizen"
-fi
+# ---------------------------------
+# logical and and logical or when used in commands that means
+# in case of and &&  i.e., com1 && com2 which means if com1 is true then only execute com2
+# com1 || com2 which means if com1 is failed then only execute com2
